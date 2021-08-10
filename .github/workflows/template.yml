@@ -1,0 +1,14 @@
+name: Template
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+      - name: Install cargo-generate
+        run: cargo install cargo-generate
+      - name: Run cargo-generate
+        run: cargo generate --git https://github.com/ark0f/rust-ark0f-template --name github-ci-test

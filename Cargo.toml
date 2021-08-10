@@ -1,0 +1,9 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2018"
+authors = ["{{authors}}"]
+license = "MIT OR Apache-2.0"
+include = ["Cargo.toml", "LICENSE-*.md", "src/**/*"]
+
+[dependencies]
