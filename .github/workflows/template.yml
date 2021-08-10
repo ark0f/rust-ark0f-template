@@ -13,6 +13,8 @@ jobs:
         with:
           toolchain: stable
       - name: Install cargo-generate
-        run: cargo install cargo-generate
+        run: |
+          curl -L https://github.com/cargo-generate/cargo-generate/releases/download/v0.8.0/cargo-generate-v0.8.0-x86_64-unknown-linux-musl.tar.gz | tar Jxf -
+          echo "./cargo-generate" >> $GITHUB_PATH
       - name: Run cargo-generate
         run: cargo generate --git https://github.com/ark0f/rust-ark0f-template --name github-ci-test
