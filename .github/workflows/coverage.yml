@@ -36,8 +36,6 @@ jobs:
         run: ./rust-covfix -o lcov.info lcov.info
       - name: Publish
         uses: codecov/codecov-action@v1
-        with:
-          {% raw %}
-          token: ${{ secrets.CODECOV_TOKEN }}
-          {% endraw %}
+        with: 
+          {% raw %}token: ${{ secrets.CODECOV_TOKEN }} {% endraw %}
           file: ./lcov.info

@@ -39,9 +39,7 @@ jobs:
       - name: Check
         uses: actions-rs/clippy-check@v1
         with:
-          {% raw %}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          {% endraw %}
+          {% raw %}token: ${{ secrets.GITHUB_TOKEN }} {% endraw %}
           args: --all-targets --all-features -- -D warnings
   test:
     name: Test
