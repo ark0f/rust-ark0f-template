@@ -16,6 +16,6 @@ jobs:
         run: |
           curl -L https://github.com/cargo-generate/cargo-generate/releases/download/v0.8.0/cargo-generate-v0.8.0-x86_64-unknown-linux-musl.tar.gz | tar zxf -
       - name: Add cargo-generate to PATH
-        run: echo "./cargo-generate" >> $GITHUB_PATH
+        run: echo "/home/runner/work/ark0f/rust-template" >> $GITHUB_PATH
       - name: Run cargo-generate
         run: cargo generate --git https://github.com/ark0f/rust-ark0f-template --name github-ci-test
