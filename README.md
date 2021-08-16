@@ -1,7 +1,7 @@
 # {{project-name}}
 
 [![Version](https://img.shields.io/crates/v/{{project-name}}.svg)](https://crates.io/crates/{{project-name}})
-![docs.rs](https://img.shields.io/docsrs/{{project-name}})
+[![docs.rs](https://img.shields.io/docsrs/{{project-name}})](https://docs.rs/ark0f/{{project-name}})
 ![License](https://img.shields.io/crates/l/{{project-name}}.svg)
 [![Codecov](https://img.shields.io/codecov/c/github/ark0f/{{project-name}})](https://app.codecov.io/gh/ark0f/{{project-name}})
 
